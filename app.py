@@ -20,3 +20,7 @@ if command == "research":
 
 if command == "price":
     print(stock.get_stocks(tickers, close=True).iloc[-1])
+
+if command = "trade"
+    print("not yet implemented")
+    exit()
