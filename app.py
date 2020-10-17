@@ -1,3 +1,4 @@
+#~/anaconda3/envs/zip/bin/python
 from libs import plots
 from libs import stock
 import matplotlib.pyplot as plt
@@ -17,14 +18,19 @@ tickers = args[1:]
 if command == "research":
     ticker = tickers[0]
     plots.SignalPlot(ticker).generate_plots()
+    exit()
 
 if command == "price":
     print(stock.get_stocks(tickers, close=True).iloc[-1])
+    exit()
 
-if command == "trade"
+if command == "trade":
     print("not yet implemented")
     exit()
 
-if command == "account"
+if command == "account":
     print("not yet implemented")
     exit()
+
+print("invalid command")
+exit()
