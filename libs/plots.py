@@ -24,6 +24,6 @@ class SignalPlot():
 
     def generate_plots(self):
 
-        bollinger_plot()
-        macd_plot()
+        self.bollinger_plot()
+        self.macd_plot()
         return plt.show()
