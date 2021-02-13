@@ -14,7 +14,7 @@ if len(args) < 2:
 command = args[0]
 tickers = args[1:]
 
-
+# commands start here
 if command == "research":
     ticker = tickers[0]
     plots.SignalPlot(ticker).generate_plots()
